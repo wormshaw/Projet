@@ -1,10 +1,10 @@
-#NS-3 Installation et Utilisation Guide
+# NS-3 Installation et Utilisation Guide
 Ce README vous guidera à travers l'installation de la dernière version de NS-3, l'exécution d'un fichier C++ et l'utilisation de NetAnim pour visualiser les résultats de notre simulation.
 
-##Prérequis
+## Prérequis
 Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit pour les utilisateurs de Linux.
 
-##Installation de NS-3
+## Installation de NS-3
 1.Ouvrez un terminal.
 2.Mettez à jour votre système avec la commande suivante :
                                               sudo apt-get update
@@ -18,12 +18,12 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
                                               
 5.Ensuite suivez les instructions sur le site de NS3.
 
-##Exécution d'un fichier C++
+## Exécution d'un fichier C++
 1.Placez le fichier C++ dans le répertoire scratch de NS-3.
 2.Exécutez le fichier C++ avec la commande suivante (remplacez your-file.cpp par le nom du fichier) :
                                               ./waf --run scratch/your-file
 
-##Utilisation de NetAnim
+## Utilisation de NetAnim
 1.Allez dans le répertoire netanim
 2.Exécutez NetAnim avec la commande suivante :
                                               ./Netanim
