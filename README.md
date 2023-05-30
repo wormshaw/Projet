@@ -30,3 +30,14 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 3.Dans l'interface de NetAnim, cliquez sur File puis Open.
 4.Naviguez jusqu'au répertoire où votre fichier XML est généré (généralement le répertoire ns-3-dev-git) et sélectionnez le fichier XML.
 5.Cliquez sur Play pour visualiser la simulation.
+
+# Lancer l'API pour stocker les informations de LEACH sur la blockchain
+1. Une fois le fichier avec les informations de LEACH récupéré, lancez votre invite de commandes et placez vous dans le répertoire project
+2. exécutez la commande : node index.js
+3. puis ouvrez postman, créez une commande post, et mettez l'URL http://localhost:3000/test
+4. cliquez sur raw puis sélectionnez JSON pour le type de text
+5. mettez dans la zone de texte :
+{
+  "filePath": "chemin\\d_acces\\vers\\votre\\fichier.txt"
+}
+6.Lancez la requête en appuyant sur Send
