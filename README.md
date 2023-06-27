@@ -24,7 +24,7 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
                                               ./waf --run scratch/your-file
 
 ## Utilisation de NetAnim
-1.Allez dans le répertoire netanim
+1.Allez dans le répertoire netanim.
 2.Exécutez NetAnim avec la commande suivante :
                                               ./Netanim
 3.Dans l'interface de NetAnim, cliquez sur File puis Open.
