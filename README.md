@@ -57,4 +57,4 @@ Pour exécuter le projet, vous devez suivre les étapes suivantes:
 
                              node watcher.js
                              node watcher2.js
-6. Exécutez LEACH comme indiqué dans la section précédente
+6. Exécutez LEACH sur un troisième terminal comme indiqué dans la section précédente
