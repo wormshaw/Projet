@@ -6,7 +6,9 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 
 ## Installation de NS-3
 1.Ouvrez un terminal.
+
 2.Mettez à jour votre système avec la commande suivante :
+
                                               sudo apt-get update
                                               sudo apt-get upgrade
                                               
@@ -14,6 +16,7 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
                                               sudo apt-get install gcc g++ python python3 python3-dev qt5-default mercurial python-setuptools git cmake libc6-dev libc6-dev-i386 g++-multilib gdb valgrind gsl-bin libgsl-dev libgsl23 libgslcblas0 tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev uncrustify doxygen graphviz imagemagick texlive texlive-latex-extra texlive-generic-recommended texinfo dia texlive texlive-latex-extra texlive-extra-utils texlive-generic-recommended texi2html python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev python-pygccxml
 
 4.Clonez le dépôt NS-3 avec la commande suivante :
+
                                               git clone https://github.com/nsnam/ns-3-dev-git.git
                                               
 5.Ensuite suivez les instructions sur le site de NS3.
