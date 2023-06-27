@@ -20,15 +20,19 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 
 ## Exécution d'un fichier C++
 1.Placez le fichier C++ dans le répertoire scratch de NS-3.
+
 2.Exécutez le fichier C++ avec la commande suivante (remplacez your-file.cpp par le nom du fichier) :
                                               ./waf --run scratch/your-file
 
 ## Utilisation de NetAnim
 1.Allez dans le répertoire netanim.
+
 2.Exécutez NetAnim avec la commande suivante :
                                               ./Netanim
 3.Dans l'interface de NetAnim, cliquez sur File puis Open.
+
 4.Naviguez jusqu'au répertoire où votre fichier XML est généré (généralement le répertoire ns-3-dev-git) et sélectionnez le fichier XML.
+
 5.Cliquez sur Play pour visualiser la simulation.
 
 # Lancer l'API pour stocker les informations de LEACH sur la blockchain
