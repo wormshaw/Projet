@@ -5,7 +5,7 @@ const  Wallet = require('ethereumjs-wallet').default
 const Tx = require('ethereumjs-tx').Transaction;
 
 
-const web3 = new Web3('https://fantom-testnet.public.blastapi.io');
+const web3 = new Web3('https://rpc.testnet.fantom.network/');
 
 const chokidar = require('chokidar');
 
@@ -15,7 +15,7 @@ const contractABI = require('./contractABI2.json');
 const { type } = require('os');
 
 
-const contractAddress = '0x0F7587FC1d68b4B8b99Fd3dbFF8c417bfcC6c429';
+const contractAddress = '0x4584C9c2547e5290c1e2333dC5A7907c0125b4cb';
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
 
 
@@ -23,7 +23,7 @@ const privateKey = 'ae44534475491acd6f5b5473e8cfcec9d62d14b9539be51716f15febcf64
 const wallet = Wallet.fromPrivateKey(Buffer.from(privateKey, 'hex'));
 
 
-const folderToWatch = 'C:/Users/badem/OneDrive/Bureau/watcher/leach_packages.txt';
+const folderToWatch = '/home/elias/repos/ns-3-allinone/ns-3-dev/Packages.txt';
 const previousFileStates = new Map();
 
 
@@ -38,7 +38,7 @@ function watchFile() {
 
   const watcher = chokidar.watch(filePath, {
     awaitWriteFinish: {
-      stabilityThreshold: 3000,
+      stabilityThreshold: 5000,
       pollInterval: 100
     }
   });
@@ -117,7 +117,7 @@ async function parseLines(lines) {
   
         // Appeler la fonction addCH
         addCH(clusterheadMAC, parseInt(round));
-        await new Promise(resolve => setTimeout(resolve, 3000));
+        await new Promise(resolve => setTimeout(resolve, 5000));
   
         let macAddresses = [];
         let RSSIs = [];
@@ -132,7 +132,7 @@ async function parseLines(lines) {
         // Appeler la fonction addNodes
         addNodes(macAddresses, RSSIs, times, clusterheadMAC);
   
-        await new Promise(resolve => setTimeout(resolve, 3000)); // Attendre 3 secondes
+        await new Promise(resolve => setTimeout(resolve, 5000)); // Attendre 3 secondes
       }
   
       console.log('-------------------');
