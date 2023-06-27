@@ -36,6 +36,7 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 1.Allez dans le répertoire netanim.
 
 2.Exécutez NetAnim avec la commande suivante :
+
                                               ./Netanim
 3.Dans l'interface de NetAnim, cliquez sur File puis Open.
 
@@ -43,13 +44,17 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 
 5.Cliquez sur Play pour visualiser la simulation.
 
-# Lancer l'API pour stocker les informations de LEACH sur la blockchain
-1. Une fois le fichier avec les informations de LEACH récupéré, lancez votre invite de commandes et placez vous dans le répertoire project
-2. exécutez la commande : node index.js
-3. puis ouvrez postman, créez une commande post, et mettez l'URL http://localhost:3000/test
-4. cliquez sur raw puis sélectionnez JSON pour le type de text
-5. mettez dans la zone de texte :
-{
-  "filePath": "chemin\\d_acces\\vers\\votre\\fichier.txt"
-}
-6.Lancez la requête en appuyant sur Send
+# Lancement du projet avec les fichiers du dossier Blockchain
+On souhaite récupérer les informations des clusters (clusterhead et noeuds) et les stocker sur la blockchain ethereum (on utilise ici le testnet Fantom). Pour ce faire, on a implémenté watcher.js et watcher2.js qui surveillent les fichiers sur lesquels le code C++ de LEACH écrit ces données. watcher et watcher2 utilisent web3.js pour envoyer des transactions en utilisant les fonctions des smart contracts nodesStorage.sol et package.sol déployés sur ethereum.
+Pour exécuter le projet, vous devez suivre les étapes suivantes:
+1. Téléchargez le fichier blockchain
+2. Installer la version 18.16 de node js (ou plus récénte)
+3. Dans votre terminal, placez vous dans le répertoire blockchain et exécutez la commande suivante :
+   
+                                        npm install
+4. Modifiez dans watcher et watcher2 les chemins d'accès (watcher vers Clusters.txt et watcher2 vers Packages.txt)
+5. Lancez watcher et watcher 2 sur deux terminaux différents avec les commandes :
+
+                             node watcher.js
+                             node watcher2.js
+6. Exécutez LEACH comme indiqué dans la section précédente
