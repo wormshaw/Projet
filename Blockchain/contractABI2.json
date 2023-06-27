@@ -1,0 +1,96 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "macAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "roundNumber",
+				"type": "int256"
+			}
+		],
+		"name": "addClusterHead",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "macAddresses",
+				"type": "string[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "RSSIs",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "times",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string",
+				"name": "clusterheadMACAddress",
+				"type": "string"
+			}
+		],
+		"name": "addNodes",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "macAddress",
+				"type": "string"
+			}
+		],
+		"name": "getClusterHead",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "nodeMACAddress",
+				"type": "string"
+			}
+		],
+		"name": "getNodeInfo",
+		"outputs": [
+			{
+				"internalType": "int256[]",
+				"name": "",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

@@ -1,0 +1,21 @@
+{
+  "name": "watcher",
+  "version": "1.0.0",
+  "description": "file watcher for LEACH algorithm data",
+  "main": "watcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chokidar": "^3.5.3",
+    "ethereumjs-common": "^1.5.2",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-wallet": "^1.0.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "web3": "^1.10.0"
+  }
+}

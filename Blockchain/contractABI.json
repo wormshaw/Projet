@@ -1,0 +1,140 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "macAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "energy",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "roundNumber",
+				"type": "int256"
+			}
+		],
+		"name": "addClusterHead",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "macAddresses",
+				"type": "string[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "energies",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "roundsSinceCH",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "string",
+				"name": "clusterheadMACAddress",
+				"type": "string"
+			}
+		],
+		"name": "addNodes",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "macAddress",
+				"type": "string"
+			}
+		],
+		"name": "getClusterHead",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "roundNumber",
+				"type": "int256"
+			}
+		],
+		"name": "getClusterHeadsFromRound",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "",
+				"type": "int256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "macAddress",
+				"type": "string"
+			}
+		],
+		"name": "getNodesFromClusterHead",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "",
+				"type": "int256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
