@@ -21,8 +21,11 @@ Assurez-vous que votre système d'exploitation est à jour. Ce guide est écrit 
 ## Exécution d'un fichier C++
 1.Placez le fichier C++ dans le répertoire scratch de NS-3.
 
-2.Exécutez le fichier C++ avec la commande suivante (remplacez your-file.cpp par le nom du fichier) :
+2.Exécutez le fichier C++ avec la commande suivante (remplacez your-file.cpp par le nom du fichier sans le .cpp) :
                                               ./waf --run scratch/your-file
+
+3.Pour changer les paramètres de la simulation à partir de la ligne de commande:
+                                              ./waf --run "scratch/Leach --nodes=100 --cluster_percentage=0.05"
 
 ## Utilisation de NetAnim
 1.Allez dans le répertoire netanim.
